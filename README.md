@@ -11,6 +11,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
+    - [What I Learned](#what-i-learned)
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
 
@@ -33,6 +34,19 @@ This is a profile card for a user with social media links. The top section conta
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+
+
+### What I Learned
+There was an accessibility warning about `<h1>` element not present in the markup. So I added a visually hidden `<h1>` after doing some research on the internet. This code is courtesy of [MasaKudamatsu](https://medium.com/web-dev-survey-from-kyoto/the-visually-hidden-technique-303f8e2bd409):
+```
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%); 
+  height: 1px; 
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+```
 
 
 ### Continued development
