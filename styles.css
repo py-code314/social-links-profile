@@ -55,7 +55,7 @@
 	--gap-social: 0.9375rem; /* 15px */
 
   /* Box shadow */
-	--box-shadow-hover: 0px 0px 2px 2px rgba(255, 255, 255, 0.75);
+	--box-shadow-hover: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Global reset */
@@ -163,10 +163,11 @@ img {
 .social__link--status:hover,
 .social__link--status:focus {
 	outline: none;
-	color: var(--bg-color-main);
+	color: var(--color-location);
 	box-shadow: var(--box-shadow-hover);
 }
 
 .social__link--status:active {
+  color: var(--bg-color-main);
 	background-color: var(--color-location);
 }
