@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
 	font-family: 'Inter';
 	src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
@@ -17,21 +18,27 @@
 	font-style: normal;
 }
 
+/* Variables */
 :root {
+  /* Colors */
 	--bg-color-main: #1d3557;
 	--bg-color-card: #457b9d;
 	--color-text: #f1faee;
 	--color-location: #e63946;
 	--bg-color-links: #5799c2;
-	--width-card: clamp(
-		20.438rem,
-		19.183rem + 5.352vw,
-		24rem
-	); /* min: 327px, max: 384px */
+
+	/* Typography */
 	--font-size-text: 0.875rem; /* 14px */
 	--font-size-name: 1.5rem; /* 24px */
 	--font-weight-name: 700;
 	--font-weight-links: 600;
+
+  /* Spacing */
+  --width-card: clamp(
+		20.438rem,
+		19.183rem + 5.352vw,
+		24rem
+	); /* min: 327px, max: 384px */
 	--padding-profile-card: clamp(
 		1.563rem,
 		1.232rem + 1.408vw,
@@ -45,11 +52,13 @@
 	--padding-block-profile: 1.5625rem; /* 25px */
 	--margin-block-profile: 1.625rem; /* 26px */
 	--padding-block-social: 0.875em; /* 14px */
-
 	--gap-social: 0.9375rem; /* 15px */
+
+  /* Box shadow */
 	--box-shadow-hover: 0px 0px 2px 2px rgba(255, 255, 255, 0.75);
 }
 
+/* Global reset */
 *,
 *::before,
 *::after {
@@ -79,6 +88,7 @@ img {
 	max-width: 100%;
 }
 
+/* Styles for profile card */
 .profile-card {
 	max-width: var(--width-card);
 	background-color: #ee9f9f;
@@ -87,6 +97,7 @@ img {
 	background-color: var(--bg-color-card);
 }
 
+/* Styles for profile section*/
 .profile {
 	display: flex;
 	flex-direction: column;
@@ -114,6 +125,7 @@ img {
 	margin-block-start: var(--padding-block-profile);
 }
 
+/* Styles for social media section */
 .social__list {
 	list-style-type: none;
 	padding: 0;
@@ -131,6 +143,7 @@ img {
 	border-radius: 5px;
 }
 
+/* Styles for social media links */
 .social__link--status:link,
 .social__link--status:visited {
 	color: inherit;
