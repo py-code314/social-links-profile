@@ -18,6 +18,16 @@
 }
 
 :root {
+  --font-size-text: 0.875rem; /* 14px */
+  --font-size-name: 1.5rem; /* 24px */
+  --font-weight-name: 700;
+  --font-weight-links: 600;
+  --padding-profile-card: 1.5rem; /* 24px */
+  --padding-inline-profile: 0.625rem; /* 10px */
+  --padding-block-profile: 1.5625rem; /* 25px */
+  --padding-block-social: 0.875em; /* 14px */
+  --margin-block-profile: 1.625rem; /* 26px */
+  --gap-social: 0.9375rem; /* 15px */
 
 }
 
@@ -39,7 +49,7 @@ body {
   align-items: center;
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 0.875rem; /* 14px */
+  font-size: var(--font-size-text);
 }
 
 img {
@@ -49,18 +59,18 @@ img {
 
 
 .profile-card {
-  max-width: 20.4375rem;
+  max-width: 20.4375rem; /* 327px */
   background-color: #ee9f9f;
   border-radius: 10px;
-  padding: 1.5rem; /* 24px */
+  padding: var(--padding-profile-card);
 }
 
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-inline: 0.625rem; /* 10px */
-  padding-block-end: 1.5625rem; /* 25px */
+  padding-inline: var(--padding-inline-profile);
+  padding-block-end: var(--padding-block-profile);
 }
 
 .profile__image {
@@ -69,20 +79,20 @@ img {
 }
 
 .profile__name {
-  font-weight: 700;
-  font-size: 1.5rem; /* 24px */
-  margin-block-start: 1.625rem; /* 26px */
+  font-weight: var(--font-weight-name);
+  font-size: var(--font-size-name);
+  margin-block-start: var(--margin-block-profile);
 
 }
 
 .profile__location {
-  font-weight: 600;
+  font-weight: var(--font-weight-links);
   color: #161910;
   
 }
 
 .profile__quote {
-  margin-block-start: 1.5625rem; /* 25px */
+  margin-block-start: var(--padding-block-profile);
   
 }
 
@@ -92,7 +102,7 @@ img {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.9375rem; /* 15px */
+  gap: var(--gap-social);
   
 }
 
@@ -102,8 +112,8 @@ img {
   display: block;
   text-decoration: none;
   color: #000;
-  font-weight: 600;
-  padding-block: 0.875em; /* 14px */
+  font-weight: var(--font-weight-links);
+  padding-block: var(--padding-block-social);
   background-color: #c0b7b7;
   border-radius: 5px;
 }
