@@ -20,7 +20,7 @@ This is a profile card for a user with social media links. The top section conta
 
 
 ### Screenshot
-![](./images/profile-card.png)
+![](./assets/images/profile-card.png)
 
 
 ### Links
@@ -34,14 +34,9 @@ This is a profile card for a user with social media links. The top section conta
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
 
 
 ### Continued development
-
 - Like to learn more about BEM nomenclature. Also like to learn how to properly name custom properties in CSS. Making use of @font-face needs further research.
 
 
