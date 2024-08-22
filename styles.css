@@ -21,11 +21,12 @@
 /* Variables */
 :root {
   /* Colors */
-	--bg-color-main: #1d3557;
-	--bg-color-card: #457b9d;
-	--color-text: #f1faee;
-	--color-location: #e63946;
-	--bg-color-links: #5799c2;
+	--bg-color-main: #0a9396;
+	--bg-color-card: #013034;
+  --bg-color-links: #09bc8a;
+  --bg-color-hover: #931621;
+	--color-text: #fff;
+	--color-location: #f1d753;
 
 	/* Typography */
 	--font-size-text: 0.875rem; /* 14px */
@@ -55,7 +56,7 @@
 	--gap-social: 0.9375rem; /* 15px */
 
   /* Box shadow */
-	--box-shadow-hover: 5px 5px 10px rgba(0, 0, 0, 0.4);
+	--box-shadow-hover: 3px 3px 1px 1px rgba(255, 255, 255, 1);
 }
 
 /* Global reset */
@@ -102,7 +103,7 @@ img {
 /* Styles for profile card */
 .profile-card {
 	max-width: var(--width-card);
-	background-color: #ee9f9f;
+	background-color: var(--bg-color-card);
 	border-radius: 10px;
 	padding: var(--padding-profile-card);
 	background-color: var(--bg-color-card);
@@ -157,14 +158,14 @@ img {
 /* Styles for social media links */
 .social__link--status:link,
 .social__link--status:visited {
-	color: inherit;
+	color: var(--bg-color-card);
 }
 
 .social__link--status:hover,
 .social__link--status:focus {
 	outline: none;
-	color: var(--color-location);
-	box-shadow: var(--box-shadow-hover);
+	background-color: var(--bg-color-hover);
+  color: #fff;
 }
 
 .social__link--status:active {
