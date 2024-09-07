@@ -80,6 +80,7 @@ body {
 	align-items: center;
 	text-align: center;
 	font-family: 'Inter', sans-serif;
+  font-display: swap;
 	font-size: var(--font-size-text);
 	color: var(--color-text);
 }
@@ -163,7 +164,8 @@ img {
 
 .social__link--status:hover,
 .social__link--status:focus {
-	outline: none;
+	/* outline: none; */
+  /* outline: white; */
 	background-color: var(--bg-color-hover);
   color: #fff;
 }
