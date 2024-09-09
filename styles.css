@@ -164,8 +164,7 @@ img {
 
 .social__link--status:hover,
 .social__link--status:focus {
-	/* outline: none; */
-  /* outline: white; */
+  outline: 2px solid white;
 	background-color: var(--bg-color-hover);
   color: #fff;
 }
